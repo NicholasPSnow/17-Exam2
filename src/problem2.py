@@ -219,9 +219,9 @@ class Triangle(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
-        if triangle2.area()>self.area():
-            return False
-        return True
+        if self.area()>triangle2.area():
+            return True
+        return False
     def shrink_or_expand(self, f):
         """
          What comes in:
